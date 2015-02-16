@@ -1,17 +1,15 @@
-# Flipper ActiveRecord
+# Flipper ActiveRecord 3.2
 
 An [ActiveRecord](https://github.com/rails/rails/tree/master/activerecord) adapter for [Flipper](https://github.com/jnunemaker/flipper).
 
-Currently, this targets Rails 4.2 because it uses real foreign keys via
-`add_foreign_key` and `remove_foreign_key`. You can backport those commands
-using the [Foreigner](https://github.com/matthuhiggins/foreigner) gem to
-drive compatibility with other rails versions.
+This version targets Rails 3.2. For Rails 4 support, please see
+[Flipper ActiveRecord](https://github.com/bgentry/flipper-activerecord)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'flipper-activerecord'
+    gem 'flipper-activerecord3dot2'
 
 And then execute:
 

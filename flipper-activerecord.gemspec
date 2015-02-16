@@ -2,13 +2,13 @@
 require File.expand_path('../lib/flipper/adapters/activerecord/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name          = "flipper-activerecord"
+  gem.name          = "flipper-activerecord3dot2"
   gem.version       = Flipper::Adapters::ActiveRecord::VERSION
-  gem.authors       = ["Blake Gentry"]
-  gem.email         = ["blakesgentry@gmail.com"]
-  gem.description   = %q{ActiveRecord adapter for Flipper}
-  gem.summary       = %q{ActiveRecord adapter for Flipper}
-  gem.homepage      = "https://github.com/bgentry/flipper-activerecord"
+  gem.authors       = ["Jesse Proudman", "Blake Gentry"]
+  gem.email         = ["jproudman@bluebox.net", "blakesgentry@gmail.com"]
+  gem.description   = %q{ActiveRecord 3.2 adapter for Flipper}
+  gem.summary       = %q{ActiveRecord 3.2 adapter for Flipper}
+  gem.homepage      = "https://github.com/jproudman/flipper-activerecord"
   gem.require_paths = ["lib"]
 
   gem.files         = `git ls-files`.split($/)
@@ -17,4 +17,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'flipper', '~> 0.6'
   gem.add_dependency 'activerecord', '>= 3.2.21'
+  gem.add_dependency 'foreigner'
 end
