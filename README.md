@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself with:
 
-    $ gem install flipper-activerecord
+    $ gem install flipper-activerecord3dot2
 
 Generate a migration to create the required database tables:
 
