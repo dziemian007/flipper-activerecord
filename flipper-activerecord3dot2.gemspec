@@ -8,6 +8,9 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/jproudman/flipper-activerecord"
   gem.require_paths = ["lib"]
 
+  gem.files = `git ls-files`.split($/)
+  gem.test_files = gem.files.grep(%r{^(test|spec|features)/})
+
   gem.add_dependency 'flipper', '~> 0.6'
   gem.add_dependency 'activerecord', '>= 3.2.21'
   gem.add_dependency 'foreigner'
